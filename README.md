@@ -14,6 +14,8 @@ Linux & Mac:
 
 Windows:
 ```
+pip install virtualenv
+virtualenv venv
 venv\Scripts\activate
 python manage.py makemigrations
 python manage.py migrate
