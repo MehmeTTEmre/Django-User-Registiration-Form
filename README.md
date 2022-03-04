@@ -2,9 +2,9 @@
 In this project, customer registration is done through the admin panel.
 ## Installation
 ```
-$ pip install python
-$ pip install django
-$ pip install django-admin-list-filter-dropdown
+pip install python
+pip install django
+pip install django-admin-list-filter-dropdown
 ```
 
 ## Usage
