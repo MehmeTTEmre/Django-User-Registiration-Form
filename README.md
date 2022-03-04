@@ -1,14 +1,29 @@
+# Django User Registiration Form
+In this project, customer registration is done through the admin panel.
 ## Installation
-
-'''
+```
 $ pip install python
 $ pip install django
 $ pip install django-admin-list-filter-dropdown
-'''
+```
 
-## Editor
+## Usage
+Linux & Mac:
 
-![indir-removebg-preview (1)](https://user-images.githubusercontent.com/61835738/156808635-f5f8a734-4c74-49bb-adee-e37a5ee86329.png)
+```source venv/bin/activate```
 
-##Usage
-Linux & Mac: source venv/bin/activate
+Windows:
+```
+venv\Scripts\activate
+python manage.py makemigrations
+python manage.py migrate
+```
+To create an admin account:
+
+```python manage.py createsuperuser```
+
+then you set username and password
+
+Run the server:
+
+```python manage.py runserver```
