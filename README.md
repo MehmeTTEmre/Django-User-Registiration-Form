@@ -41,3 +41,5 @@ After adding the /admin tag to the local url (http://127.0.0.1:8000/admin), we w
 
 ![3](https://user-images.githubusercontent.com/61835738/156841631-fefff38a-ae57-4420-8168-2047b6b2bf07.png)
 
+You can enter the admin panel with the username and password you created with the python manage.py createsuperuser command, or you can log in to the administration panel with the username: admin, password: admin information I created.
+
