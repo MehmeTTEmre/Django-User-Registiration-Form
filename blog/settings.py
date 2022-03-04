@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LIST_PER_PAGE = 20
 
 # Application definition
 

@@ -20,7 +20,8 @@ from django.urls import path, include
 from home.views import home_view
 from account.views import register
 from account.views import login
-#from form.views import forms
+from form.views import form
+from form.views import form_details
 
 
 urlpatterns = [
@@ -28,5 +29,6 @@ urlpatterns = [
     path("", home_view, name="home"),
     path("register/", register),
     path("login/",login, name="login"),
-    #path("form/", forms, name="form"),
+    path("form/", form, name="form"),
+    path("form-details/", form_details),
 ]

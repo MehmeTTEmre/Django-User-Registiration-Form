@@ -21,7 +21,7 @@ def login(request):
     if request.method == "POST":
         form = AuthenticationForm(data=request.POST)
         if form.is_valid():
-            return redirect("home")
+            return redirect("form")
     else:
         form = AuthenticationForm()
     return render(request, "login.html", {"form": form})
