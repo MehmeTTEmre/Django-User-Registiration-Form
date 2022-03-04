@@ -1,12 +1,19 @@
 from django.contrib import admin
 from .models import Form
+from django_admin_listfilter_dropdown.filters import DropdownFilter, RelatedDropdownFilter, ChoiceDropdownFilter
 
 # Register your models here.
 
 class FormAdmin(admin.ModelAdmin):
 
     list_display = ["Id", "name", "surname"]
-    list_filter = ["city"]
+    list_filter = ( ('Id', DropdownFilter),
+                    ('name', DropdownFilter),
+                    ('surname', DropdownFilter),
+                    ('TCNumber', DropdownFilter),
+                    ('tel', DropdownFilter),
+                    ('city', DropdownFilter),
+                    ('state', DropdownFilter))
     search_fields = ["Id", "name", "surname", "TCNumber", "tel", "city", "state"]
 
     list_per_page = 25
