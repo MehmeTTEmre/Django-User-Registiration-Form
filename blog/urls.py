@@ -20,11 +20,13 @@ from django.urls import path, include
 from home.views import home_view
 from account.views import register
 from account.views import login
+#from form.views import forms
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", home_view, name="home"),
-    path("register/", register,),
+    path("register/", register),
     path("login/",login, name="login"),
+    #path("form/", forms, name="form"),
 ]

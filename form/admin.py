@@ -10,9 +10,11 @@ class FormAdmin(admin.ModelAdmin):
     list_filter = ["city"]
     search_fields = ["Id", "name", "surname", "TCNumber", "tel", "city", "state"]
 
+    
 
     class Meta:
         model = Form
 
-
 admin.site.register(Form, FormAdmin)
+
+
