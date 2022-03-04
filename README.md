@@ -13,6 +13,9 @@ Linux & Mac:
 ```source venv/bin/activate```
 
 Windows:
+
+open command prompt in file directory
+
 ```
 pip install virtualenv
 virtualenv venv
