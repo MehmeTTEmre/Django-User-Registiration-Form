@@ -3,7 +3,6 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.forms import AuthenticationForm
 from django.http import HttpResponse
 
-
 # Create your views here.
 
 def register(request):
