@@ -30,5 +30,5 @@ urlpatterns = [
     path("register/", register),
     path("login/",login, name="login"),
     path("form/", form, name="form"),
-    path("form-details/", form_details),
+    path("form-details/", form_details, name="form-details"),
 ]
